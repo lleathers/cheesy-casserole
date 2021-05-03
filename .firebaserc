@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "cheesycasseroles"
+  },
+  "targets": {
+    "cheesycasseroles": {
+      "hosting": {
+        "my-app": [
+          "cheesycasseroles"
+        ]
+      }
+    }
   }
 }

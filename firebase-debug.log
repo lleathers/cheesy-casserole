@@ -1,0 +1,34 @@
+[debug] [2021-05-03T19:45:52.765Z] ----------------------------------------------------------------------
+[debug] [2021-05-03T19:45:52.767Z] Command:       /usr/local/Cellar/node/16.0.0_1/bin/node /usr/local/bin/firebase serve
+[debug] [2021-05-03T19:45:52.767Z] CLI Version:   9.10.0
+[debug] [2021-05-03T19:45:52.767Z] Platform:      darwin
+[debug] [2021-05-03T19:45:52.767Z] Node Version:  v16.0.0
+[debug] [2021-05-03T19:45:52.768Z] Time:          Mon May 03 2021 15:45:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-05-03T19:45:52.768Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-03T19:45:52.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-03T19:45:52.794Z] > authorizing via signed-in user (lleathers0@gmail.com)
+[debug] [2021-05-03T19:45:52.794Z] [iam] checking project cheesycasseroles for permissions ["firebase.projects.get"]
+[debug] [2021-05-03T19:45:52.797Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cheesycasseroles:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-05-03T19:45:53.013Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 03 May 2021 19:45:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=152","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-03T19:45:53.015Z] > refreshing access token with scopes: []
+[debug] [2021-05-03T19:45:53.015Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-03T19:45:53.090Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 03 May 2021 19:45:53 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-03T19:45:53.425Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cheesycasseroles [none]
+[debug] [2021-05-03T19:45:53.641Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cheesycasseroles 200
+[debug] [2021-05-03T19:45:53.641Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cheesycasseroles {"projectId":"cheesycasseroles","projectNumber":"100576600233","displayName":"cheesycasseroles","name":"projects/cheesycasseroles","resources":{"hostingSite":"cheesycasseroles"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/larryleathers/Documents/Firebase/cheesy/my-app'...
+[info] 
+[debug] [2021-05-03T19:45:53.643Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cheesycasseroles/webApps/-/config [none]
+[debug] [2021-05-03T19:45:54.199Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cheesycasseroles/webApps/-/config 200
+[debug] [2021-05-03T19:45:54.199Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cheesycasseroles/webApps/-/config {"projectId":"cheesycasseroles","storageBucket":"cheesycasseroles.appspot.com","apiKey":"AIzaSyDpUFSrvGUIyG6_M6mXD3d8R796dkkv9S8","authDomain":"cheesycasseroles.firebaseapp.com","messagingSenderId":"100576600233"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting[my-app]: Serving hosting files from: dist/my-app {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/my-app\u001b[22m"}}
+[info] ✔  hosting[my-app]: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [03/May/2021:19:46:08 +0000] "GET / HTTP/1.1" 200 1830 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/May/2021:19:46:08 +0000] \"GET / HTTP/1.1\" 200 1830 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15\""}}
+[info] i  hosting: 127.0.0.1 - - [03/May/2021:19:46:08 +0000] "GET /images/checas06a04.png HTTP/1.1" 200 304613 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/May/2021:19:46:08 +0000] \"GET /images/checas06a04.png HTTP/1.1\" 200 304613 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15\""}}
+[info] i  hosting: 127.0.0.1 - - [03/May/2021:19:46:10 +0000] "GET /favicon.ico HTTP/1.1" 404 1808 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/May/2021:19:46:10 +0000] \"GET /favicon.ico HTTP/1.1\" 404 1808 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15\""}}
